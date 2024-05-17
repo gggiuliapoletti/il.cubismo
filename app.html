@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Approfondimento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('sfondo.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #ffe574;
+            padding: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            margin-left: 5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+            position: relative;
+        }
+
+        nav ul li a, nav ul li button {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            display: block;
+            text-align: left;
+        }
+
+        nav ul li a:hover, nav ul li button:hover {
+            background-color: #ccb44a;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffe574;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            margin: 0;
+        }
+
+        nav ul li ul li a {
+            padding: 0.5rem 1rem;
+            white-space: nowrap;
+            display: block;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #ccb44a;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background-color: rgba(244, 244, 244, 0.9);
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ffe574;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .slideshow-container {
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid #000;
+            margin: 20px auto;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #play-audio-btn {
+            background-color: #ffe574;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #play-audio-btn:hover {
+            background-color: #ccb44a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Il cubismo</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Menu</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="app.html">Approfondimento</a></li>
+                        <li><a href="fonti.html">Fonti</a></li>
+                        <li><button id="play-audio-btn">Avvia MP3</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="content-box">
+            <h1>Analisi Les Demoiselles d'Avignon</h1>
+            <p>L'opera 'Les Demoiselles d'Avignon', realizzata nel 1907 da Pablo Picasso, rappresenta una
+                svolta radicale nella storia dell'arte moderna. Con i suoi 866 bozzetti preparatori, l'artista crea
+                quasi un gigantesco 'foglio da schizzo' su cui sperimentare le sue nuove idee. Tuttavia, questo
+                capolavoro non è il risultato finale del suo lavoro; infatti, Picasso smette improvvisamente di
+                lavorarci e lo abbandona nel suo studio.
+                Il titolo stesso, 'Les Demoiselles d’Avignon', è attribuito posticciamente dal suo amico André
+                Salmon. L'opera presenta una donna seduta a destra rappresentata da diversi punti di vista: il suo
+                volto e la schiena sono visibili contemporaneamente. Questo esperimento artistico riflette
+                l'interesse di Picasso per la scultura negra e il suo desiderio di maggiore stilizzazione delle forme
+                e di un rigore geometrico più deciso, abbandonando le raffigurazioni naturalistiche precedenti.
+                Picasso si ispira alle maschere africane, come quelle che ha visto al museo del Trocadero a Parigi,
+                per dare forma alle cinque figure femminili presenti nell'opera. Le due figure centrali mantengono
+                una certa naturalità, mentre le altre sono 'scomposte' e deformate, con visi simili a maschere
+                negre. Queste figure si integrano con l'ambiente circostante, dove lo 'spazio vuoto' della stanza è
+                sostituito da forme solide che si incuneano tra di loro.
+                In sintesi, 'Les Demoiselles d’Avignon' è un'opera che segna una rottura con il passato, sia nel
+                suo processo creativo che nel suo stile. È un manifesto della ricerca di Picasso per una nuova
+                espressione artistica, influenzata dalle tradizioni africane e caratterizzata da una scomposizione
+                delle forme e una reinterpretazione dei concetti di bellezza e armonia.</p>
+            <div class="slideshow-container">
+                <img src="7.png" class="active" alt="Immagine 7">
+                <img src="8.png" alt="Immagine 8">
+            </div>
+        </div>
+    </main>
+
+    <br><br><br><br>
+
+    <footer>
+        <p>© Giulia Poletti</p>
+    </footer>
+
+    <audio id="audio" src="audio.m4a"></audio>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slideshow-container img');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = 'none';
+                slide.classList.remove('active');
+            });
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = 'block';
+            slides[slideIndex - 1].classList.add('active');
+            setTimeout(showSlides, 3000);
+        }
+
+        showSlides();
+
+        document.getElementById('play-audio-btn').addEventListener('click', function() {
+            document.getElementById('audio').play();
+        });
+    </script>
+</body>
+</html>

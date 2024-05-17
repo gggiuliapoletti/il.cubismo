@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('sfondo.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #ffe574; /* Rimosso rgba per eliminare la trasparenza */
+            padding: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            margin-left: 5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ccb44a;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffe574; /* Rimosso rgba per eliminare la trasparenza */
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            margin: 0;
+        }
+
+        nav ul li ul li a {
+            padding: 0.5rem 1rem;
+            white-space: nowrap;
+            display: block;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #ccb44a;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background-color: rgba(244, 244, 244, 0.9);
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ffe574; /* Rimosso rgba per eliminare la trasparenza */
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .slideshow-container {
+            width: 600px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid #000;
+            margin: auto;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Cookie pop-up styles */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            display: none;
+            z-index: 1000;
+        }
+
+        .cookie-consent button {
+            background-color: #ffe574;
+            color: black;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cookie-consent button:hover {
+            background-color: #ccb44a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Il cubismo</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Menu</a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="app.html">Approfondimento</a></li>
+                        <li><a href="fonti.html">Fonti</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="content-box">
+            <div id="cubismo-introduction">
+                <h1>Il cubismo</h1>
+                <p>Il cubismo nasce ufficialmente con il dipinto di Picasso
+                    “Les demoiselles d’Avignon” del 1907.
+                    Il termine deriva dal giudizio del critico Vauxelles che
+                    ritenne «bizzarrie cubiste» le figure rappresentate.
+                    I due principali esponenti di questo movimento sono
+                    Pablo Picasso (1881-1973) e Georges Braque
+                    (1882-1963). Come per tutti i movimenti di avanguardia
+                    c’è la convinzione che l’arte non debba più imitare la
+                    realtà. Per i cubisti una cosa nn può essere insieme vera
+                    e verosimile, infatti si concentrano sul conoscere
+                    l’oggetto da raffigurare piuttosto che sul copiarlo. Si
+                    rappresenta l’oggetto nella sua totalità, anche nelle parti
+                    nascoste e da piu punti di vista: ognuno di questi
+                    corrisponde ad un diverso momento dell’osservazione.
+                    Viene quindi introdotta la quarta dimensione: il tempo,
+                    necessario per acquisire la conoscenza degli oggetti. Per i
+                    cubisti il tempo è condizionato dalle emozioni e dalla
+                    memoria personale.</p>
+                    <img src="2.png" alt="Immagine" style="display: block; margin: 20px auto; width: 250px; height: 300px;">
+            </div>
+    
+            <div id="protocubismo">
+                <h1>Protocubismo o Primitivo (1907-1909)</h1>
+                <p>La prima fase del cubismo vede come soggetti prevalentemente
+                    paesaggi e nature morte, ridotti a solidi geometrici. Si predilige l’uso di
+                    pochi colori e forti contrasti fra essi. Si ispira all’arte primitiva
+                    Prevale la bidimensionalità: solo le ombre innaturali creano volume.</p>
+                    <img src="1.png" alt="Immagine" style="display: block; margin: 20px auto; width: 200px; height: 300px;">
+            </div>
+    
+            <div id="cubismo-analitico">
+                <h1>Cubismo analitico (1909-1911)</h1>
+                <p>Si tende alla monocromia: i colori sono
+                    scuri, metallici (toni grigi, bruni, ocra). E’
+                    eliminata la linea di contorno, i volumi si
+                    intersecano. Il quadro è scomposto in
+                    piccoli frammenti geometrici, ognuno dei
+                    quali rappresenta il soggetto visto da più
+                    punti di vista ( frontale, laterale, di profilo,
+                    dietro, dall’alto, dal basso): ogni punto di
+                    vista corrisponde ad un momento diverso
+                    dell’osservazione...il tempo.</p>
+                    <img src="3.png" alt="Immagine" style="display: block; margin: 20px auto; width: 200px; height: 300px;">
+            </div>
+    
+            <div id="cubismo-sintetico">
+                <h1>Cubismo sintetico (1911-1914)</h1>
+                <p>Braque e Picasso non volevano che la loro pittura sconfinasse
+                    nell'astrazione, senza un rapporto concreto con la realtà. Per risolvere,
+                    nei dipinti si introducono oggetti reali: lettere dell’alfabeto, materiali,
+                    giornali. In questo modo ogni ipotesi di fuga verso la l’astrazione viene
+                    volontariamente bloccata dall’ immediata riconoscibilità di questi
+                    elementi perché riconducibili alla concretezza del quotidiano. Quindi
+                    scomposizione con aggiunta, sinteticamente, di frammenti veri
+                    combinati alle parti dipinte. Nasce il collage o papier collé. I soggetti
+                    sono prevalentemente nature morte. Torna il colore</p>
+                    <img src="4.png" alt="Immagine" style="display: block; margin: 20px auto; width: 220px; height: 300px;">
+            </div>
+    
+            <div id="cubismo-orfico">
+                <h1>Cubismo orfico (1912-1914)</h1>
+                <p>Nel 1912 un gruppo di cubisti formò il movimento detto Section d'Or con una
+                    mostra alla Galerie Élysées La Boétie a Parigi, accompagnata dalla
+                    pubblicazione del trattato Du Cubisme di Metzinger. Guillaume Apollinaire
+                    pubblica il manifesto programmatico del movimento e conia il termine
+                    “orfismo” (che fa riferimento mitico ad Orfeo, musicista e poeta), facente capo
+                    a Robert Delaunay. Gli orfisti criticano la staticità e la mancanza del colore.
+                    Introducono il movimento, andamento rotatorio molto vicina alla definizione di
+                    spazio-tempo del Futurismo italiano. Il gruppo si incontrava regolarmente in
+                    casa dei fratelli Duchamp (Jaques Villon, Marcel Duchamp, Raymond Duchamp
+                    Villon Puteaux) e la denominazione Section d’Or fu data da Villon alla prima
+                    mostra del gruppo (chiarisce l'intento del movimento. Sostenere l’aspetto
+                    analitico del cubismo sulla base di regole matematiche e geometriche, tratte
+                    dalle speculazioni rinascimentali di L. Pacioli sulla sezione aurea o “numero
+                    d'oro”.
+                    Robert Delaunay realizza un intero ciclo di dipinti e disegni (una cinquantina in
+                    totale) negli anni 1909/12. Si inizia, come i cubisti dalla scomposizione
+                    dell'oggetto reale analizzato nei vari suoi aspetti e da vari piani prospettici,
+                    successivamente si inserisce il dinamismo spaziale, movimento torsivo di
+                    impronta Futurista (ricorda Boccioni). Sono presenti moli colori (policromismo).
+                    Mentre il Cubismo è un'analitica enumerazione di successive percezioni
+                    dell’oggetto, senza nessuna sensibilità per il colore, l'orfismo recupera il
+                    concetto di simultaneità, e fa del colore e della luce un attributo essenziale alla
+                    ricomposizione della
+                    sensazione.</p>
+    
+                    <div style="text-align: center;">
+                        <img id="immagine" src="5.png" alt="Immagine" style="display: block; margin: 20px auto; width: 250px; height: 300px;" onclick="cambiaImmagine()">
+                    </div>
+                    <script>
+                        function cambiaImmagine() {
+                            var immagine = document.getElementById("immagine");
+                            if (immagine.src.match("5.png")) {
+                                immagine.src = "6.png";
+                            } else {
+                                immagine.src = "5.png";
+                            }
+                        }
+                    </script>
+
+                    <p><br>
+                
+                        Clicca l'immagine</p>
+                    
+            </div>
+        </div>
+    </main>
+
+    <br><br><br><br>
+
+    <footer>
+        <p>© Giulia Poletti</p>
+    </footer>
+
+    <div class="cookie-consent" id="cookieConsent">
+        Vuoi accettare i cookies per migliorare la tua esperienza di navigazione?
+        <button onclick="accettaCookies()">Accetta</button>
+    </div>
+
+    <script>
+
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                document.getElementById('cookieConsent').style.display = 'block';
+            }
+        };
+
+        function accettaCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieConsent').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
